@@ -7,7 +7,7 @@ It counts:
 - Small straight
 - Yahtzee
 - Chance
-Have fun!
+--> Have fun!
 
 Dies ist eine Kurzversion von dem Würfelspiel Kniffel für zwei Spieler.
 Es werden gezählt:
@@ -16,4 +16,4 @@ Es werden gezählt:
 - Kleine Strasse
 - Kniffel
 - Chance
-Viel Spass beim Spielen!
+--> Viel Spass beim Spielen!
