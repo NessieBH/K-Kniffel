@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="950.0" prefWidth="650.0" stylesheets="@application.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="kniffel.Controller">
+   <children>
+      <TextField fx:id="anzeigeeinser" alignment="CENTER" editable="false" layoutX="194.0" layoutY="371.0" prefHeight="49.0" prefWidth="67.0">
+         <font>
+            <Font name="Arial Bold" size="26.0" />
+         </font></TextField>
+      <Button fx:id="wuerfeln" contentDisplay="CENTER" layoutX="30.0" layoutY="108.0" mnemonicParsing="false" onAction="#run" prefHeight="54.0" prefWidth="190.0" text="Würfeln">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Button>
+      <Text layoutX="247.0" layoutY="182.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Würfel 1" wrappingWidth="53.13671875">
+         <font>
+            <Font size="14.0" />
+         </font></Text>
+      <Text layoutX="324.0" layoutY="181.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Würfel 2" wrappingWidth="53.13671875">
+         <font>
+            <Font size="14.0" />
+         </font></Text>
+      <Text layoutX="399.0" layoutY="180.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Würfel 3" wrappingWidth="53.13671875">
+         <font>
+            <Font size="14.0" />
+         </font></Text>
+      <Text layoutX="470.0" layoutY="181.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Würfel 4" wrappingWidth="53.13671875">
+         <font>
+            <Font size="14.0" />
+         </font></Text>
+      <Text layoutX="540.0" layoutY="179.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Würfel 5" wrappingWidth="53.13671875">
+         <font>
+            <Font size="14.0" />
+         </font></Text>
+      <TextField fx:id="anzeigewuerfel1" alignment="CENTER" editable="false" layoutX="247.0" layoutY="110.0" prefHeight="44.0" prefWidth="53.0" stylesheets="@application.css">
+         <font>
+            <Font name="Arial Bold" size="26.0" />
+         </font></TextField>
+      <TextField fx:id="anzeigewuerfel2" alignment="CENTER" editable="false" layoutX="324.0" layoutY="110.0" prefHeight="44.0" prefWidth="53.0" stylesheets="@application.css">
+         <font>
+            <Font name="Arial Bold" size="26.0" />
+         </font></TextField>
+      <TextField fx:id="anzeigewuerfel3" alignment="CENTER" editable="false" layoutX="399.0" layoutY="110.0" prefHeight="44.0" prefWidth="53.0" stylesheets="@application.css">
+         <font>
+            <Font name="Arial Bold" size="26.0" />
+         </font></TextField>
+      <TextField fx:id="anzeigewuerfel4" alignment="CENTER" editable="false" layoutX="470.0" layoutY="110.0" prefHeight="44.0" prefWidth="53.0" stylesheets="@application.css">
+         <font>
+            <Font name="Arial Bold" size="26.0" />
+         </font></TextField>
+      <TextField fx:id="anzeigewuerfel5" alignment="CENTER" editable="false" layoutX="540.0" layoutY="110.0" prefHeight="44.0" prefWidth="53.0" stylesheets="@application.css">
+         <font>
+            <Font name="Arial Bold" size="26.0" />
+         </font></TextField>
+      <TextField fx:id="anzeigesumme" alignment="CENTER" editable="false" layoutX="115.0" layoutY="233.0" prefHeight="56.0" prefWidth="79.0">
+         <font>
+            <Font name="Arial Bold" size="30.0" />
+         </font>
+      </TextField>
+      <Button fx:id="keepw1" layoutX="247.0" layoutY="189.0" mnemonicParsing="false" onAction="#keep1" text="Halten">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Button>
+      <Text fontSmoothingType="LCD" layoutX="41.0" layoutY="191.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Anzahl Würfe" wrappingWidth="79.00000147148967">
+         <font>
+            <Font name="Arial" size="18.0" />
+         </font>
+      </Text>
+      <TextField fx:id="anzeigeanzahlwuerfe" alignment="CENTER" editable="false" layoutX="116.0" layoutY="173.0" prefHeight="49.0" prefWidth="53.0">
+         <font>
+            <Font name="Arial Bold" size="26.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="meldung" alignment="CENTER" editable="false" layoutX="29.0" layoutY="880.0" prefHeight="37.0" prefWidth="554.0" stylesheets="@application.css">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </TextField>
+      <Button fx:id="keepw3" layoutX="399.0" layoutY="189.0" mnemonicParsing="false" onAction="#keep3" text="Halten">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Button>
+      <Button fx:id="keepw2" layoutX="324.0" layoutY="189.0" mnemonicParsing="false" onAction="#keep2" text="Halten">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Button>
+      <Button fx:id="keepw4" layoutX="470.0" layoutY="189.0" mnemonicParsing="false" onAction="#keep4" stylesheets="@application.css" text="Halten">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Button>
+      <Button fx:id="keepw5" layoutX="540.0" layoutY="189.0" mnemonicParsing="false" onAction="#keep5" text="Halten">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Button>
+      <Button fx:id="neuesspiel" layoutX="247.0" layoutY="33.0" mnemonicParsing="false" onAction="#neuesspiel" prefHeight="34.0" prefWidth="177.0" text="Neues Spiel">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font></Button>
+      <Button fx:id="einser" layoutX="48.0" layoutY="379.0" mnemonicParsing="false" onAction="#einser" prefHeight="30.0" prefWidth="115.0" text="Alle Einser">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Button>
+      <Button fx:id="dreierpasch" layoutX="48.0" layoutY="438.0" mnemonicParsing="false" onAction="#dreierpasch" prefHeight="30.0" prefWidth="115.0" text="3er - Pasch">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Button>
+      <TextField fx:id="anzeigedreierpasch" alignment="CENTER" editable="false" layoutX="194.0" layoutY="430.0" prefHeight="49.0" prefWidth="67.0">
+         <font>
+            <Font name="Arial Bold" size="26.0" />
+         </font>
+      </TextField>
+      <Button fx:id="chance" layoutX="48.0" layoutY="502.0" mnemonicParsing="false" onAction="#chance" prefHeight="30.0" prefWidth="115.0" text="Chance">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Button>
+      <TextField fx:id="anzeigechance" alignment="CENTER" editable="false" layoutX="194.0" layoutY="494.0" prefHeight="49.0" prefWidth="67.0">
+         <font>
+            <Font name="Arial Bold" size="26.0" />
+         </font>
+      </TextField>
+      <Button fx:id="fullhouse" layoutX="48.0" layoutY="561.0" mnemonicParsing="false" onAction="#fullhouse" prefHeight="30.0" prefWidth="115.0" text="Full House">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Button>
+      <TextField fx:id="anzeigefullhouse" alignment="CENTER" editable="false" layoutX="194.0" layoutY="553.0" prefHeight="49.0" prefWidth="67.0">
+         <font>
+            <Font name="Arial Bold" size="26.0" />
+         </font>
+      </TextField>
+      <Text layoutX="33.0" layoutY="256.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Summe" wrappingWidth="67.13671875">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <Button fx:id="kleinestrasse" layoutX="48.0" layoutY="625.0" mnemonicParsing="false" onAction="#kleinestrasse" prefHeight="30.0" prefWidth="115.0" text="Kleine Straße">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Button>
+      <TextField fx:id="anzeigekleinestrasse" alignment="CENTER" editable="false" layoutX="194.0" layoutY="617.0" prefHeight="49.0" prefWidth="67.0">
+         <font>
+            <Font name="Arial Bold" size="26.0" />
+         </font>
+      </TextField>
+      <Button fx:id="grossestrasse" layoutX="48.0" layoutY="689.0" mnemonicParsing="false" onAction="#grossestrasse" prefHeight="30.0" prefWidth="115.0" text="Große Straße">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Button>
+      <TextField fx:id="anzeigegrossestrasse" alignment="CENTER" editable="false" layoutX="194.0" layoutY="681.0" prefHeight="49.0" prefWidth="67.0">
+         <font>
+            <Font name="Arial Bold" size="26.0" />
+         </font>
+      </TextField>
+      <Button fx:id="kniffel" layoutX="48.0" layoutY="745.0" mnemonicParsing="false" onAction="#kniffel" prefHeight="30.0" prefWidth="115.0" text="Kniffel">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Button>
+      <TextField fx:id="anzeigekniffel" alignment="CENTER" editable="false" layoutX="194.0" layoutY="737.0" prefHeight="49.0" prefWidth="67.0">
+         <font>
+            <Font name="Arial Bold" size="26.0" />
+         </font>
+      </TextField>
+      <Button fx:id="spielerwechsel" layoutX="351.0" layoutY="261.0" mnemonicParsing="false" onAction="#spielerwechsel" text="Spielerwechsel">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Button>
+      <TextField fx:id="anzeigespieler" alignment="CENTER" editable="false" layoutX="462.0" layoutY="249.0" prefHeight="49.0" prefWidth="136.0">
+         <font>
+            <Font name="Arial Bold" size="26.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="anz_einsersp1" alignment="CENTER" editable="false" layoutX="339.0" layoutY="372.0" prefHeight="49.0" prefWidth="79.0">
+         <font>
+            <Font name="Arial Bold" size="26.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="anz_einsersp2" alignment="CENTER" editable="false" layoutX="501.0" layoutY="372.0" prefHeight="49.0" prefWidth="79.0">
+         <font>
+            <Font name="Arial Bold" size="26.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="anz_namespieler1" alignment="CENTER" layoutX="293.0" layoutY="315.0" prefHeight="37.0" prefWidth="136.0" promptText="Spieler 1">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="anz_namespieler2" alignment="CENTER" layoutX="456.0" layoutY="315.0" prefHeight="37.0" prefWidth="136.0" promptText="Spieler 2">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="anz_3erpaschsp1" alignment="CENTER" editable="false" layoutX="339.0" layoutY="431.0" prefHeight="49.0" prefWidth="79.0">
+         <font>
+            <Font name="Arial Bold" size="26.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="anz_3erpaschsp2" alignment="CENTER" editable="false" layoutX="501.0" layoutY="431.0" prefHeight="49.0" prefWidth="79.0">
+         <font>
+            <Font name="Arial Bold" size="26.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="anz_chancesp1" alignment="CENTER" editable="false" layoutX="339.0" layoutY="495.0" prefHeight="49.0" prefWidth="79.0">
+         <font>
+            <Font name="Arial Bold" size="26.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="anz_chancesp2" alignment="CENTER" editable="false" layoutX="501.0" layoutY="495.0" prefHeight="49.0" prefWidth="79.0">
+         <font>
+            <Font name="Arial Bold" size="26.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="anz_fullhousesp1" alignment="CENTER" editable="false" layoutX="339.0" layoutY="554.0" prefHeight="49.0" prefWidth="79.0">
+         <font>
+            <Font name="Arial Bold" size="26.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="anz_fullhousesp2" alignment="CENTER" editable="false" layoutX="501.0" layoutY="554.0" prefHeight="49.0" prefWidth="79.0">
+         <font>
+            <Font name="Arial Bold" size="26.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="anz_kleinestrassesp2" alignment="CENTER" editable="false" layoutX="501.0" layoutY="621.0" prefHeight="49.0" prefWidth="79.0">
+         <font>
+            <Font name="Arial Bold" size="26.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="anz_kleinestrassesp1" alignment="CENTER" editable="false" layoutX="339.0" layoutY="621.0" prefHeight="49.0" prefWidth="79.0">
+         <font>
+            <Font name="Arial Bold" size="26.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="anz_grossestrassesp1" alignment="CENTER" editable="false" layoutX="339.0" layoutY="682.0" prefHeight="49.0" prefWidth="79.0">
+         <font>
+            <Font name="Arial Bold" size="26.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="anz_grossestrassesp2" alignment="CENTER" editable="false" layoutX="501.0" layoutY="682.0" prefHeight="49.0" prefWidth="79.0">
+         <font>
+            <Font name="Arial Bold" size="26.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="anz_kniffelsp1" alignment="CENTER" editable="false" layoutX="339.0" layoutY="738.0" prefHeight="49.0" prefWidth="79.0">
+         <font>
+            <Font name="Arial Bold" size="26.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="anz_kniffelsp2" alignment="CENTER" editable="false" layoutX="501.0" layoutY="738.0" prefHeight="49.0" prefWidth="79.0">
+         <font>
+            <Font name="Arial Bold" size="26.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="anz_summesp1" alignment="CENTER" editable="false" layoutX="339.0" layoutY="804.0" prefHeight="49.0" prefWidth="79.0">
+         <font>
+            <Font name="Arial Bold" size="26.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="anz_summesp2" alignment="CENTER" editable="false" layoutX="501.0" layoutY="804.0" prefHeight="49.0" prefWidth="79.0">
+         <font>
+            <Font name="Arial Bold" size="26.0" />
+         </font>
+      </TextField>
+      <Text fontSmoothingType="LCD" layoutX="251.0" layoutY="835.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Summe" wrappingWidth="67.13672080636024">
+         <font>
+            <Font name="Arial Bold" size="18.0" />
+         </font>
+      </Text>
+      <Button fx:id="urheber" layoutX="447.0" layoutY="42.0" mnemonicParsing="false" onAction="#urheber" prefHeight="25.0" prefWidth="153.0" text="Spielanleitung" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,132 @@
+/* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
+
+ .root {
+	-fx-background-image: url("Hintergrund.jpg");
+}
+
+#neuesspiel{
+	-fx-background-color:#20B2AA;
+	-fx-background-radius: 50px;
+	-fx-border-with: 50px;
+	-fx-border-radius: 50px;
+    -fx-border-width: 2px;
+    -fx-border-color: black;
+}
+
+
+
+
+#wuerfeln{
+	-fx-background-color:#EE82EE;
+	-fx-background-radius: 50px;
+	-fx-border-with: 50px;
+	-fx-border-radius: 50px;
+    -fx-border-width: 2px;
+    -fx-border-color: black;
+}
+
+
+
+#anzeigewuerfel1{
+	-fx-text-fill: #000000;
+	-fx-background-color:#FFFFCC;
+}
+#anzeigewuerfel2{
+	-fx-text-fill: #000000;
+	-fx-background-color:#FFFFCC;
+}
+#anzeigewuerfel3{
+	-fx-text-fill: #000000;
+	-fx-background-color:#FFFFCC;
+}
+#anzeigewuerfel4{
+	-fx-text-fill: #000000;
+	-fx-background-color:#FFFFCC;
+}
+#anzeigewuerfel5{
+	-fx-text-fill: #000000;
+	-fx-background-color:#FFFFCC;
+}
+#keepw1{
+	-fx-background-color:#87CEFA;
+	-fx-background-radius: 10px;
+}
+
+#keepw2{
+	-fx-background-color:#87CEFA;
+	-fx-background-radius: 10px;
+}
+
+#keepw3{
+	-fx-background-color:#87CEFA;
+	-fx-background-radius: 10px;
+}
+
+#keepw4{
+	-fx-background-color:#87CEFA;
+	-fx-background-radius: 10px;
+}
+
+#keepw5{
+	-fx-background-color:#87CEFA;
+	-fx-background-radius: 10px;
+}
+#einser{
+	-fx-background-color:#7FFFd4;
+	-fx-background-radius: 20px;
+	-fx-border-with: 50px;
+	-fx-border-radius: 50px;
+    -fx-border-width: 2px;
+    -fx-border-color: black;
+}
+#dreierpasch{
+	-fx-background-color:#7FFFd4;
+	-fx-background-radius: 20px;
+	-fx-border-with: 50px;
+	-fx-border-radius: 50px;
+    -fx-border-width: 2px;
+    -fx-border-color: black;
+}
+#chance{
+	-fx-background-color:#7FFFd4;
+	-fx-background-radius: 20px;
+	-fx-border-with: 50px;
+	-fx-border-radius: 50px;
+    -fx-border-width: 2px;
+    -fx-border-color: black;
+}#fullhouse{
+	-fx-background-color:#7FFFd4;
+	-fx-background-radius: 20px;
+	-fx-border-with: 50px;
+	-fx-border-radius: 50px;
+    -fx-border-width: 2px;
+    -fx-border-color: black;
+}#kleinestrasse{
+	-fx-background-color:#7FFFd4;
+	-fx-background-radius: 20px;
+	-fx-border-with: 50px;
+	-fx-border-radius: 50px;
+    -fx-border-width: 2px;
+    -fx-border-color: black;
+}#grossestrasse{
+	-fx-background-color:#7FFFd4;
+	-fx-background-radius: 20px;
+	-fx-border-with: 50px;
+	-fx-border-radius: 50px;
+    -fx-border-width: 2px;
+    -fx-border-color: black;
+}
+#kniffel{
+	-fx-background-color:#7FFFd4;
+	-fx-background-radius: 20px;
+	-fx-border-with: 50px;
+	-fx-border-radius: 50px;
+    -fx-border-width: 2px;
+    -fx-border-color: black;
+}
+
+
+
+
+
+
