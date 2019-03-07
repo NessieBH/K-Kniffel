@@ -1,19 +1,27 @@
 # K-Kniffel
 
-Short version of Yahtzee for two players.
+This project is for my studies at Beuth University of Applied sciences.
+
+Short version of Yahtzee for one or two players.
 It counts: 
 - Ones
 - Three of a kind
 - Small straight
+- Large straight
+- Full House
 - Yahtzee
 - Chance
 --> Have fun!
 
-Dies ist eine Kurzversion von dem Würfelspiel Kniffel für zwei Spieler.
+Dieses Projekt ist für mein Studium an der Beuth Hochschule für Technik Berlin entstanden.
+
+Dies ist eine Kurzversion von dem Würfelspiel Kniffel für ein oder zwei Spieler.
 Es werden gezählt:
 - Einser
 - Dreierpasch
-- Kleine Strasse
+- Kleine Straße
+- Große Straße
+- Full House
 - Kniffel
 - Chance
 --> Viel Spass beim Spielen!
