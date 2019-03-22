@@ -1,6 +1,6 @@
 # K-Kniffel
 
-This project is for my studies at Beuth University of Applied sciences.
+This project is a result for my studies at Beuth University of Applied Sciences.
 
 Short version of Yahtzee for one or two players.
 It counts: 
