@@ -1,6 +1,6 @@
 # K-Kniffel
 
-This project is a result for my studies at Beuth University of Applied Sciences.
+This java/javafx project is a result of my studies at Beuth University of Applied Sciences.
 
 Short version of Yahtzee for one or two players.
 It counts: 
@@ -12,6 +12,7 @@ It counts:
 - Yahtzee
 - Chance
 --> Have fun!
+
 
 Dieses Projekt ist für mein Studium an der Beuth Hochschule für Technik Berlin entstanden.
 
