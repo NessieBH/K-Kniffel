@@ -1,8 +1,8 @@
 /**
  * 
- * Copyright © 2019 L-Programming. All Rights Reserved.
+ * Copyright Â© 2019 L-Programming. All Rights Reserved.
  * @author Vanessa Lutz  
- * @version 2.0
+ * @version 1.2
  *
  */
 
@@ -24,7 +24,7 @@ import java.util.*;
 
 public class Controller implements Initializable {
  
-	// Definition der Variablen für Würfeln / Auswertung der Würfel / Entscheidung der Spieler
+	// Definition der Variablen fÃ¼r WÃ¼rfeln / Auswertung der WÃ¼rfel / Entscheidung der Spieler
 	
    int anzahlrunden = 0;
    int spieler = 1;
@@ -40,22 +40,22 @@ public class Controller implements Initializable {
    String nameSpieler1, nameSpieler2;
    
                
-   // Definiton der allgemeinen Felder für Würfeln GUI
+   // Definiton der allgemeinen Felder fÃ¼r WÃ¼rfeln GUI
                              
    @FXML private Button spielanleitung, neuesspiel, wuerfeln, spielerwechsel;
    @FXML private TextField anz_namespieler1,anz_namespieler2 ;
    @FXML private TextField anzeigesumme, anzeigeanzahlwuerfe, meldung, anzeigespieler;
    @FXML public Button keepw1, keepw2, keepw3, keepw4, keepw5; 
-   @FXML public ImageView würfel1, würfel2, würfel3, würfel4, würfel5; 
+   @FXML public ImageView wÃ¼rfel1, wÃ¼rfel2, wÃ¼rfel3, wÃ¼rfel4, wÃ¼rfel5; 
    
-   // Definiton der Felder für die Auswertung der aktuellen Würfel GUI
+   // Definiton der Felder fÃ¼r die Auswertung der aktuellen WÃ¼rfel GUI
    
    @FXML private Button einser, dreierpasch, chance, fullhouse;
    @FXML private Button kleinestrasse, grossestrasse, kniffel ;
    @FXML private TextField anzeigeeinser, anzeigedreierpasch, anzeigechance, anzeigefullhouse;
    @FXML private TextField anzeigekleinestrasse, anzeigegrossestrasse, anzeigekniffel;
          
-   // Definiton der Textfelder für die Ergebnisse Speieler 1 und Spieler 2 GUI
+   // Definiton der Textfelder fÃ¼r die Ergebnisse Speieler 1 und Spieler 2 GUI
    
    @FXML private TextField anz_einsersp1, anz_3erpaschsp1, anz_chancesp1, anz_fullhousesp1;
    @FXML private TextField anz_kleinestrassesp1, anz_grossestrassesp1,anz_kniffelsp1, anz_summesp1; 
@@ -63,17 +63,17 @@ public class Controller implements Initializable {
    @FXML private TextField anz_kleinestrassesp2, anz_grossestrassesp2,anz_kniffelsp2, anz_summesp2; 
    
     
-   private Image Bild1 = new Image("Würfel1.png");
-   private Image Bild2 = new Image("Würfel2.png");
-   private Image Bild3 = new Image("Würfel3.png");
-   private Image Bild4 = new Image("Würfel4.png");
-   private Image Bild5 = new Image("Würfel5.png");
-   private Image Bild6 = new Image("Würfel6.png");
-   private Image Bild7 = new Image("Würfel_leer.png");
+   private Image Bild1 = new Image("WÃ¼rfel1.png");
+   private Image Bild2 = new Image("WÃ¼rfel2.png");
+   private Image Bild3 = new Image("WÃ¼rfel3.png");
+   private Image Bild4 = new Image("WÃ¼rfel4.png");
+   private Image Bild5 = new Image("WÃ¼rfel5.png");
+   private Image Bild6 = new Image("WÃ¼rfel6.png");
+   private Image Bild7 = new Image("WÃ¼rfel_leer.png");
                 
    Spieler01 sp1 = new Spieler01();   				
    Spieler02 sp2 = new Spieler02();   				
-   Würfeln run = new Würfeln();   					
+   WÃ¼rfeln run = new WÃ¼rfeln();   					
    
      
     @Override
@@ -124,49 +124,49 @@ public class Controller implements Initializable {
 		sp2.reset_entscheidung();
 	}
 
-   // Beim Betätigen von "Start Würfeln" ( on Action = run ) werden folgende Funktionen ausgeführt:
-   // 1.) Würfeln in Abhängigkeit ob "Halten" ausgewählt
+   // Beim BetÃ¤tigen von "Start WÃ¼rfeln" ( on Action = run ) werden folgende Funktionen ausgefÃ¼hrt:
+   // 1.) WÃ¼rfeln in AbhÃ¤ngigkeit ob "Halten" ausgewÃ¤hlt
    // 2.) Auswertung der Ergebnisse (3er-Pasch, Full House Kniffel etc )
-   // 3.) Anzeige der Ergebnisse in Abhängigkeit Spieler 1 / Spieler 2 und abspeichern im Ergebnis Array
+   // 3.) Anzeige der Ergebnisse in AbhÃ¤ngigkeit Spieler 1 / Spieler 2 und abspeichern im Ergebnis Array
    
    public void run (ActionEvent event) {
 	     
-	   run.würfel_run(wuerfel, anzahlwuerfe,halten);					    
+	   run.wÃ¼rfel_run(wuerfel, anzahlwuerfe,halten);					    
 	      
-	   if (wuerfel[0] ==1 ) { würfel1.setImage(Bild1); } 
-	   if (wuerfel[0] ==2 ) { würfel1.setImage(Bild2); } 
-	   if (wuerfel[0] ==3 ) { würfel1.setImage(Bild3); } 
-	   if (wuerfel[0] ==4 ) { würfel1.setImage(Bild4); } 
-	   if (wuerfel[0] ==5 ) { würfel1.setImage(Bild5); } 
-	   if (wuerfel[0] ==6 ) { würfel1.setImage(Bild6); } 
+	   if (wuerfel[0] ==1 ) { wÃ¼rfel1.setImage(Bild1); } 
+	   if (wuerfel[0] ==2 ) { wÃ¼rfel1.setImage(Bild2); } 
+	   if (wuerfel[0] ==3 ) { wÃ¼rfel1.setImage(Bild3); } 
+	   if (wuerfel[0] ==4 ) { wÃ¼rfel1.setImage(Bild4); } 
+	   if (wuerfel[0] ==5 ) { wÃ¼rfel1.setImage(Bild5); } 
+	   if (wuerfel[0] ==6 ) { wÃ¼rfel1.setImage(Bild6); } 
 	   
-	   if (wuerfel[1] ==1 ) { würfel2.setImage(Bild1); } 
-	   if (wuerfel[1] ==2 ) { würfel2.setImage(Bild2); } 
-	   if (wuerfel[1] ==3 ) { würfel2.setImage(Bild3); } 
-	   if (wuerfel[1] ==4 ) { würfel2.setImage(Bild4); } 
-	   if (wuerfel[1] ==5 ) { würfel2.setImage(Bild5); } 
-	   if (wuerfel[1] ==6 ) { würfel2.setImage(Bild6); } 
+	   if (wuerfel[1] ==1 ) { wÃ¼rfel2.setImage(Bild1); } 
+	   if (wuerfel[1] ==2 ) { wÃ¼rfel2.setImage(Bild2); } 
+	   if (wuerfel[1] ==3 ) { wÃ¼rfel2.setImage(Bild3); } 
+	   if (wuerfel[1] ==4 ) { wÃ¼rfel2.setImage(Bild4); } 
+	   if (wuerfel[1] ==5 ) { wÃ¼rfel2.setImage(Bild5); } 
+	   if (wuerfel[1] ==6 ) { wÃ¼rfel2.setImage(Bild6); } 
 	   
-	   if (wuerfel[2] ==1 ) { würfel3.setImage(Bild1); } 
-	   if (wuerfel[2] ==2 ) { würfel3.setImage(Bild2); } 
-	   if (wuerfel[2] ==3 ) { würfel3.setImage(Bild3); } 
-	   if (wuerfel[2] ==4 ) { würfel3.setImage(Bild4); } 
-	   if (wuerfel[2] ==5 ) { würfel3.setImage(Bild5); } 
-	   if (wuerfel[2] ==6 ) { würfel3.setImage(Bild6); } 
+	   if (wuerfel[2] ==1 ) { wÃ¼rfel3.setImage(Bild1); } 
+	   if (wuerfel[2] ==2 ) { wÃ¼rfel3.setImage(Bild2); } 
+	   if (wuerfel[2] ==3 ) { wÃ¼rfel3.setImage(Bild3); } 
+	   if (wuerfel[2] ==4 ) { wÃ¼rfel3.setImage(Bild4); } 
+	   if (wuerfel[2] ==5 ) { wÃ¼rfel3.setImage(Bild5); } 
+	   if (wuerfel[2] ==6 ) { wÃ¼rfel3.setImage(Bild6); } 
 	   
-	   if (wuerfel[3] ==1 ) { würfel4.setImage(Bild1); } 
-	   if (wuerfel[3] ==2 ) { würfel4.setImage(Bild2); } 
-	   if (wuerfel[3] ==3 ) { würfel4.setImage(Bild3); } 
-	   if (wuerfel[3] ==4 ) { würfel4.setImage(Bild4); } 
-	   if (wuerfel[3] ==5 ) { würfel4.setImage(Bild5); } 
-	   if (wuerfel[3] ==6 ) { würfel4.setImage(Bild6); } 
+	   if (wuerfel[3] ==1 ) { wÃ¼rfel4.setImage(Bild1); } 
+	   if (wuerfel[3] ==2 ) { wÃ¼rfel4.setImage(Bild2); } 
+	   if (wuerfel[3] ==3 ) { wÃ¼rfel4.setImage(Bild3); } 
+	   if (wuerfel[3] ==4 ) { wÃ¼rfel4.setImage(Bild4); } 
+	   if (wuerfel[3] ==5 ) { wÃ¼rfel4.setImage(Bild5); } 
+	   if (wuerfel[3] ==6 ) { wÃ¼rfel4.setImage(Bild6); } 
 	   
-	   if (wuerfel[4] ==1 ) { würfel5.setImage(Bild1); } 
-	   if (wuerfel[4] ==2 ) { würfel5.setImage(Bild2); } 
-	   if (wuerfel[4] ==3 ) { würfel5.setImage(Bild3); } 
-	   if (wuerfel[4] ==4 ) { würfel5.setImage(Bild4); } 
-	   if (wuerfel[4] ==5 ) { würfel5.setImage(Bild5); } 
-	   if (wuerfel[4] ==6 ) { würfel5.setImage(Bild6); } 
+	   if (wuerfel[4] ==1 ) { wÃ¼rfel5.setImage(Bild1); } 
+	   if (wuerfel[4] ==2 ) { wÃ¼rfel5.setImage(Bild2); } 
+	   if (wuerfel[4] ==3 ) { wÃ¼rfel5.setImage(Bild3); } 
+	   if (wuerfel[4] ==4 ) { wÃ¼rfel5.setImage(Bild4); } 
+	   if (wuerfel[4] ==5 ) { wÃ¼rfel5.setImage(Bild5); } 
+	   if (wuerfel[4] ==6 ) { wÃ¼rfel5.setImage(Bild6); } 
 	   
 	    anzeigespieler.setText("" + spieler);    
 	  	anzeigeanzahlwuerfe.setText("" +anzahlwuerfe[0]);   		
@@ -183,7 +183,7 @@ public class Controller implements Initializable {
 		  
 		  if (anzahlwuerfe[0] ==3)  {
 			  
-			  meldung.setText("Die maximale Anzahl Würfe ist erreicht !"); 
+			  meldung.setText("Die maximale Anzahl WÃ¼rfe ist erreicht !"); 
 			  wuerfeln.setDisable(true);
 			  keepw1.setDisable(true);								
 			  keepw2.setDisable(true);
@@ -193,7 +193,7 @@ public class Controller implements Initializable {
 		  }
 		
 		  
-		  // Vorbelegung der Anzeigen für Bewertung auf Null und Freigabe Auswahl Button
+		  // Vorbelegung der Anzeigen fÃ¼r Bewertung auf Null und Freigabe Auswahl Button
 		  	  		  
 		  if (spieler ==1) {
 			  sp1.anzeige_null(anz_auswertung, auswertung);				
@@ -202,7 +202,7 @@ public class Controller implements Initializable {
 		     sp2.anzeige_null(anz_auswertung, auswertung);				
 		  }
 		    		   
-		   	run.würfel_auswertung(auswertung,anz_auswertung, wuerfel);
+		   	run.wÃ¼rfel_auswertung(auswertung,anz_auswertung, wuerfel);
 			
 		   	enable_auswahl = new int[]{0,0,0,0,0,0,0};
 		   	
@@ -243,7 +243,7 @@ public class Controller implements Initializable {
 					  }  			  
 	  		}
  
-     // Funktionen halten Würfel 1 bis Würfel 5
+     // Funktionen halten WÃ¼rfel 1 bis WÃ¼rfel 5
    
    		public void keep1 (ActionEvent event) {
    			halten[0] = 1;
@@ -393,11 +393,11 @@ public class Controller implements Initializable {
 			anzeigegrossestrasse.setText("");
 			anzeigekniffel.setText("");
 			anzeigeeinser.setText(""); 	
-			würfel1.setImage(Bild7);
-			würfel2.setImage(Bild7);
-			würfel3.setImage(Bild7);
-			würfel4.setImage(Bild7);
-			würfel5.setImage(Bild7);
+			wÃ¼rfel1.setImage(Bild7);
+			wÃ¼rfel2.setImage(Bild7);
+			wÃ¼rfel3.setImage(Bild7);
+			wÃ¼rfel4.setImage(Bild7);
+			wÃ¼rfel5.setImage(Bild7);
 		}
 	
 	   public void disable_buttons() {
