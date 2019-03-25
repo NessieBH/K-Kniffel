@@ -26,102 +26,17 @@
     -fx-border-color: black;
 }
 
-#anzeigewuerfel1{
-	-fx-text-fill: #000000;
-	-fx-border-color: grey;
-	-fx-background-color:#F5FFC3;
-}
-#anzeigewuerfel2{
-	-fx-text-fill: #000000;
-	-fx-border-color: grey;
-	-fx-background-color:#F5FFC3;
-}
-#anzeigewuerfel3{
-	-fx-text-fill: #000000;
-	-fx-border-color: grey;
-	-fx-background-color:#F5FFC3;
-}
-#anzeigewuerfel4{
-	-fx-text-fill: #000000;
-	-fx-border-color: grey;
-	-fx-background-color:#F5FFC3;
-}
-#anzeigewuerfel5{
+#anzeigewuerfel1, #anzeigewuerfel2, #anzeigewuerfel3, #anzeigewuerfel4, #anzeigewuerfel5{
 	-fx-text-fill: #000000;
 	-fx-border-color: grey;
 	-fx-background-color:#F5FFC3;
 }
 
-#keepw1{
-	-fx-background-image: url(Hold.jpg);
-	
-}
-
-#keepw2{
+#keepw1, #keepw2, #keepw3, #keepw4, #keepw5{
 	-fx-background-image: url(Hold.jpg);
 }
 
-#keepw3{
-	-fx-background-image: url(Hold.jpg);
-}
-
-#keepw4{
-	-fx-background-image: url(Hold.jpg);
-}
-
-#keepw5{
-	-fx-background-image: url(Hold.jpg);
-}
-	
-#einser{
-	-fx-background-color:#612C83;
-	-fx-background-radius: 20px;
-	-fx-border-with: 50px;
-	-fx-border-radius: 50px;
-    -fx-border-width: 2px;
-    -fx-border-color: black;
-}
-#dreierpasch{
-	-fx-background-color:#612C83;
-	-fx-background-radius: 20px;
-	-fx-border-with: 50px;
-	-fx-border-radius: 50px;
-    -fx-border-width: 2px;
-    -fx-border-color: black;
-}
-#chance{
-	-fx-background-color:#612C83;
-	-fx-background-radius: 20px;
-	-fx-border-with: 50px;
-	-fx-border-radius: 50px;
-    -fx-border-width: 2px;
-    -fx-border-color: black;
-}
-#fullhouse{
-	-fx-background-color:#612C83;
-	-fx-background-radius: 20px;
-	-fx-border-with: 50px;
-	-fx-border-radius: 50px;
-    -fx-border-width: 2px;
-    -fx-border-color: black;
-}
-#kleinestrasse{
-	-fx-background-color:#612C83;
-	-fx-background-radius: 20px;
-	-fx-border-with: 50px;
-	-fx-border-radius: 50px;
-    -fx-border-width: 2px;
-    -fx-border-color: black;
-}
-#grossestrasse{
-	-fx-background-color:#612C83;
-	-fx-background-radius: 20px;
-	-fx-border-with: 50px;
-	-fx-border-radius: 50px;
-    -fx-border-width: 2px;
-    -fx-border-color: black;
-}
-#kniffel{
+#einser, #dreierpasch, #chance, #fullhouse, #kleinestrasse, #grossestrasse, #kniffel{
 	-fx-background-color:#612C83;
 	-fx-background-radius: 20px;
 	-fx-border-with: 50px;
@@ -130,101 +45,17 @@
     -fx-border-color: black;
 }
 
-#anz_namespieler1{
-	-fx-text-fill: #000000;
-	-fx-background-color:#509AAF;
-}
-#anz_einsersp1{
-	-fx-text-fill: #000000;
-	-fx-background-color:#509AAF;
-}
-#anz_3erpaschsp1{
-	-fx-text-fill: #000000;
-	-fx-background-color:#509AAF;
-}
-#anz_chancesp1{
-	-fx-text-fill: #000000;
-	-fx-background-color:#509AAF;
-}
-#anz_fullhousesp1{
-	-fx-text-fill: #000000;
-	-fx-background-color:#509AAF;
-}
-#anz_kleinestrassesp1{
-	-fx-text-fill: #000000;
-	-fx-background-color:#509AAF;
-}
-#anz_grossestrassesp1{
-	-fx-text-fill: #000000;
-	-fx-background-color:#509AAF;
-}
-#anz_kniffelsp1{
-	-fx-text-fill: #000000;
-	-fx-background-color:#509AAF;
-}
-#anz_summesp1{
+#anz_namespieler1, #anz_einsersp1, #anz_3erpaschsp1, #anz_chancesp1, #anz_fullhousesp1, #anz_kleinestrassesp1, #anz_grossestrassesp1, #anz_kniffelsp1, #anz_summesp1{
 	-fx-text-fill: #000000;
 	-fx-background-color:#509AAF;
 }
 
-
-#anz_namespieler2{
-	-fx-text-fill: #000000;
-	-fx-background-color:#7DD8C7;
-}
-#anz_einsersp2{
-	-fx-text-fill: #000000;
-	-fx-background-color:#7DD8C7;
-}
-#anz_3erpaschsp2{
-	-fx-text-fill: #000000;
-	-fx-background-color:#7DD8C7;
-}
-#anz_chancesp2{
-	-fx-text-fill: #000000;
-	-fx-background-color:#7DD8C7;
-}
-#anz_fullhousesp2{
-	-fx-text-fill: #000000;
-	-fx-background-color:#7DD8C7;
-}
-#anz_kleinestrassesp2{
-	-fx-text-fill: #000000;
-	-fx-background-color:#7DD8C7;
-}
-#anz_grossestrassesp2{
-	-fx-text-fill: #000000;
-	-fx-background-color:#7DD8C7;
-}
-#anz_kniffelsp2{
-	-fx-text-fill: #000000;
-	-fx-background-color:#7DD8C7;
-}
-#anz_summesp2{
+#anz_namespieler2, #anz_einsersp2, #anz_3erpaschsp2, #anz_chancesp2, #anz_fullhousesp2, #anz_kleinestrassesp2, #anz_grossestrassesp2, #anz_kniffelsp2, #anz_summesp2{
 	-fx-text-fill: #000000;
 	-fx-background-color:#7DD8C7;
 }
 
-#anzeigeeinser{
+#anzeigeeinser, #anzeigedreierpasch, #anzeigechance, #anzeigefullhouse, #anzeigekleinestrasse, #anzeigegrossestrasse, #anzeigekniffel{
 	-fx-background-color:#F5FFC3;
 }
-#anzeigedreierpasch{
-	-fx-background-color:#F5FFC3;
-}
-#anzeigechance{
-	-fx-background-color:#F5FFC3;
-}
-#anzeigefullhouse{
-	-fx-background-color:#F5FFC3;
-}
-#anzeigekleinestrasse{
-	-fx-background-color:#F5FFC3;
-}
-#anzeigegrossestrasse{
-	-fx-background-color:#F5FFC3;
-}
-#anzeigekniffel{
-	-fx-background-color:#F5FFC3;
-}
-
 
