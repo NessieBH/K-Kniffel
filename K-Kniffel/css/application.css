@@ -13,8 +13,8 @@
 	-fx-background-radius: 50px;
 	-fx-border-with: 50px;
 	-fx-border-radius: 50px;
-    -fx-border-width: 2px;
-    -fx-border-color:#F5FFC3;
+   	-fx-border-width: 2px;
+    	-fx-border-color:#F5FFC3;
 }
 
 #wuerfeln{
@@ -22,8 +22,8 @@
 	-fx-background-radius: 50px;
 	-fx-border-with: 50px;
 	-fx-border-radius: 50px;
-    -fx-border-width: 2px;
-    -fx-border-color: black;
+    	-fx-border-width: 2px;
+    	-fx-border-color: black;
 }
 
 #anzeigewuerfel1, #anzeigewuerfel2, #anzeigewuerfel3, #anzeigewuerfel4, #anzeigewuerfel5{
@@ -41,8 +41,8 @@
 	-fx-background-radius: 20px;
 	-fx-border-with: 50px;
 	-fx-border-radius: 50px;
-    -fx-border-width: 2px;
-    -fx-border-color: black;
+    	-fx-border-width: 2px;
+    	-fx-border-color: black;
 }
 
 #anz_namespieler1, #anz_einsersp1, #anz_3erpaschsp1, #anz_chancesp1, #anz_fullhousesp1, #anz_kleinestrassesp1, #anz_grossestrassesp1, #anz_kniffelsp1, #anz_summesp1{
