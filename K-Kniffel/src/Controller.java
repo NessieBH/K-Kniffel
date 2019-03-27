@@ -201,8 +201,10 @@ public class Controller implements Initializable {
 		  else {
 		     sp2.anzeige_null(anz_auswertung, auswertung);				
 		  }
-		    		   
-		   	run.würfel_auswertung(auswertung,anz_auswertung, wuerfel);
+		    		
+	   	 auswertung = new int []{0,0,0,0,0,0,0} ; 
+	   
+		 run.würfel_auswertung(auswertung,anz_auswertung, wuerfel);
 			
 		   	enable_auswahl = new int[]{0,0,0,0,0,0,0};
 		   	
