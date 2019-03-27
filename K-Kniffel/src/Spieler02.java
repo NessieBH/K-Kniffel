@@ -1,6 +1,6 @@
 /**
  * 
- * Copyright © 2019 L-Programming. All Rights Reserved.
+ * Copyright Â© 2019 L-Programming. All Rights Reserved.
  * @author Vanessa Lutz  
  * @version 2.0
  *
@@ -17,89 +17,27 @@ public class Spieler02 {
 	
 	
 	public void anzeige_null(int[] anz_auswertung, int[] auswertung) {	
-			
-		if ( entscheidung[0] == 0 )
-		{
-			anz_auswertung[0] = 0;
-		}
-		if (entscheidung[1] == 0 ) 
-		{
-			anz_auswertung[1] = 0;
-		}
-		if ( entscheidung[2] == 0 )
-		{
-			anz_auswertung[2] = 0;
-		}
-		if ( entscheidung[3] == 0 )
-		{
-			anz_auswertung[3] = 0;
-		}
-		if ( entscheidung[4] == 0 )
-		{
-		anz_auswertung[4] = 0;
-		}
-		if ( entscheidung[5] == 0 )
-		{
-		anz_auswertung[5] = 0;
-		}
-		if ( entscheidung[6] == 0 )
-		{
-		anz_auswertung[6] = 0;
-		}
-	}
-	
-	
+		
+		for (int z=0; z < 7; z++) {			
+			   
+			   if ( entscheidung[z] == 0 )
+			   {
+					anz_auswertung[z] = 0;
+				}
+		   }
+	   }
+		
+
 	public void anzeige_ergebnis(int[] auswertung, int[]enable_auswahl) {		  
 			
-		//Auswertung Anzeige einser ja/nein
-			
-		if (  entscheidung[0] == 0  && ( ergebnis[0] == 0 || auswertung[0] == 1))
-		{
-			enable_auswahl[0] =1;
-			}
-			
-		//Auswertung Anzeige 3erpasch ja/nein
-		
-		if (  entscheidung[1] == 0  && ( ergebnis[1] == 0 || auswertung[1] == 1))
-		{
-			enable_auswahl[1] =1;
-			}
-		
-		//Auswertung Chance ja/nein
-		
-		if (  entscheidung[2] == 0  && ( ergebnis[2] == 0 || auswertung[2] == 1))
-		{
-			enable_auswahl[2] =1;
-			}
-		
-		//Auswertung Full House ja/nein
-		
-		if (  entscheidung[3] == 0  && ( ergebnis[3] == 0 || auswertung[3] == 1))
-		{
-			enable_auswahl[3] =1;
-			}
-		
-		//Auswertung kleine Straße ja/nein
-		
-		if (  entscheidung[4] == 0  && ( ergebnis[4] == 0 || auswertung[4] == 1))
-		{
-			enable_auswahl[4] =1;
-			}
-		
-		//Auswertung grosse Straße ja/nein
-		
-		if (  entscheidung[5] == 0  && ( ergebnis[5] == 0 || auswertung[5] == 1))
-		{
-			enable_auswahl[5] =1;
-			}
-		
-		//Auswertung Kniffel ja/nein
-		
-		if (  entscheidung[6] == 0  && ( ergebnis[6] == 0 || auswertung[6] == 1))
-		{
-			enable_auswahl[6] =1;
-			}	
-	}
+		for (int z=0; z < 7; z++) {			
+			   
+		   		if (  entscheidung[z] == 0  && ( ergebnis[z] == 0 || auswertung[z] == 1))
+		   		{
+		   			enable_auswahl[z] =1;
+				}
+		   }
+	   }
 	
 	
 		public void ent_einser(int[] anz_auswertung, javafx.scene.control.TextField anz_einsersp2) {		  
