@@ -1,6 +1,6 @@
 /**
  * 
- * Copyright © 2019 L-Programming. All Rights Reserved.
+ * Copyright Â© 2019 L-Programming. All Rights Reserved.
  * @author Vanessa Lutz  
  * @version 2.0
  *
@@ -13,49 +13,33 @@ import java.util.Arrays;
 import java.util.Collections;
 
 
-public class Würfeln {							
+public class WÃ¼rfeln {							
 
 	static int[] auswertung_f = {0,0,0,0,0,0,0}; 								 
 
-	public void würfel_run(Integer[] wuerfel, int[]anzahlwuerfe,int[] halten ) {		          
+	public void wÃ¼rfel_run(Integer[] wuerfel, int[]anzahlwuerfe,int[] halten ) {		          
 		
 			if (anzahlwuerfe[0] <3)  {                 
 			   
-			  anzahlwuerfe[0]++;
+					anzahlwuerfe[0]++;
 					
-				if (halten[0] == 0)  { 
-			      	wuerfel[0] = (int)(Math.random()*6+1);
-			      	  }
-			      	  
-			    if (halten[1] == 0)  {  
-			    	wuerfel[1] = (int)(Math.random()*6+1);
-			      		  }
-			      	   
-			    if (halten[2] == 0)  { 
-			    	wuerfel[2] = (int)(Math.random()*6+1);
-			      		  }
-			      	 
-			    if (halten[3] == 0)  {  
-			    	wuerfel[3] = (int)(Math.random()*6+1);
-			      		  }
-			      	  
-			    if (halten[4] == 0)  {   
-			    	wuerfel[4] = (int)(Math.random()*6+1);
-			      		  } 
-		
-			      	wuerfel[5] = wuerfel[0] + wuerfel[1] + wuerfel[2] + wuerfel[3] + wuerfel[4];   				      	
+					for (int z=0; z < 5; z++) {	
+					
+							if (halten[z] == 0)  { 
+								wuerfel[z] = (int)(Math.random()*6+1);
+							}
+					}
+					wuerfel[5] = wuerfel[0] + wuerfel[1] + wuerfel[2] + wuerfel[3] + wuerfel[4];   				      	
 			}
 	}
 
 
-	public void würfel_auswertung(int[] auswertung,int[] anz_auswertung,Integer[] wuerfel ) {												
+	public void wÃ¼rfel_auswertung(int[] auswertung,int[] anz_auswertung,Integer[] wuerfel ) {												
 	       			
-			auswertung_f[0] = Collections.frequency(Arrays.asList(wuerfel), 1);  
-			auswertung_f[1] = Collections.frequency(Arrays.asList(wuerfel), 2);  
-			auswertung_f[2] = Collections.frequency(Arrays.asList(wuerfel), 3);  
-			auswertung_f[3] = Collections.frequency(Arrays.asList(wuerfel), 4);  
-			auswertung_f[4] = Collections.frequency(Arrays.asList(wuerfel), 5);  
-			auswertung_f[5] = Collections.frequency(Arrays.asList(wuerfel), 6);  
+			for (int z=0; z<6; z++) {
+	        
+				auswertung_f[z] = Collections.frequency(Arrays.asList(wuerfel), (z+1));  
+            		}  
 			
 			// Auswertung alle Einser
 			
@@ -86,7 +70,7 @@ public class Würfeln {
 				anz_auswertung[3] = 25;
 			 }	
 					
-			// Auswertung kleine + große Straße
+			// Auswertung kleine + groÃŸe StraÃŸe
 			
 			if (auswertung_f[2] >= 1 && auswertung_f[3] >= 1 )
 			{
@@ -105,7 +89,7 @@ public class Würfeln {
 				auswertung[5] = 1;
 				anz_auswertung[5] = 40;	
 			}
-		}
+			}
 		}
 	
 			// Auswertung Kniffel
